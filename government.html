@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Scholarship Registration</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .navbar, .footer {
+            background-color:  rgba(54, 72, 171, 1);
+        }
+        h2 {
+            color: rgba(54, 72, 171, 1);
+        }
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn-back {
+            background-color: rgba(121, 196, 161, 0.979);
+            color: white;
+        }
+        .spacing-btn {
+            margin-top: 20px; /* Add space between buttons */
+        }
+        .navbar-brand img {
+            height: 50px; /* Adjust the height of the logo */
+        }
+        /* Footer Social Media Icons */
+.col-md-3 i {
+    font-size: 1.5rem; /* Adjust icon size */
+    transition: transform 0.3s ease; /* Add hover effect */
+      }
+
+.col-md-3 i:hover {
+    transform: scale(1.2); /* Enlarge on hover */
+      }
+
+/* Space out the icons */
+.col-md-3 a {
+    margin-right: 15px;
+    }
+    </style>
+</head>
+<body>
+   <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container d-flex justify-content-between align-items-center">
+        
+        <!-- Left: Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="cstlogo.png" alt="CST University Logo">
+        </a>
+
+        <!-- Center: Title -->
+        <span class="text-white fw-bold mx-3">Government Scholarship Registration</span>
+
+        <!-- Right: Menu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuBar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="menuBar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="main.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        More Info
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Registration Info</a></li>
+                        <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                        <li><a class="dropdown-item" href="#">Help</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">FAQs</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container text-center mt-5">
+        <h2>Government Scholarship Registration Form</h2>
+        <div class="form-container mt-4">
+            <form id="scholarshipForm">
+                <!-- Student Information -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="studentName" class="form-label">Student Name</label>
+                        <input type="text" class="form-control" id="studentName" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="studentId" class="form-label">Student ID</label>
+                        <input type="text" class="form-control" id="studentId" required>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="cid" class="form-label">CID</label>
+                    <input type="text" class="form-control" id="cid" required>
+                </div>
+
+                <!-- Program Selection -->
+                <div class="mb-3">
+                    <label for="program" class="form-label">Program</label>
+                    <select class="form-select" id="program" required>
+                        <option value="" disabled selected>Select Program</option> <!-- Empty default option -->
+                        <option value="Information Technology">Information Technology</option>
+                        <option value="Civil">Civil Engineering</option>
+                        <option value="Engineering Geology">Engineering Geology</option>
+                        <option value="Water Resource">Water Resource</option>
+                        <option value="Architecture">Architecture</option>
+                        <option value="Electrical">Electrical Engineering</option>
+                        <option value="Instrumentation and Control">Instrumentation and Control</option>
+                        <option value="Electronic and Communication">Electronic and Communication</option>
+                        <option value="Software">Software Engineering</option>
+                    </select>
+                </div>
+
+                <!-- Year and Semester Selection -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="year" class="form-label">Year</label>
+                        <select class="form-select" id="year" required>
+                            <option value="" disabled selected>Select Year</option> <!-- Empty default option -->
+                            <option value="First">First Year</option>
+                            <option value="Second">Second Year</option>
+                            <option value="Third">Third Year</option>
+                            <option value="Fourth">Fourth Year</option>
+                            <option value="Fifth">Fifth Year</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="semester" class="form-label">Semester</label>
+                        <select class="form-select" id="semester" required>
+                            <option value="" disabled selected>Select Semester</option> <!-- Empty default option -->
+                            <option value="1st">1st Semester</option>
+                            <option value="2nd">2nd Semester</option>
+                            <option value="3rd">3rd Semester</option>
+                            <option value="4th">4th Semester</option>
+                            <option value="5th">5th Semester</option>
+                            <option value="6th">6th Semester</option>
+                            <option value="7th">7th Semester</option>
+                            <option value="8th">8th Semester</option>
+                            <option value="9th">9th Semester</option>
+                            <option value="10th">10th Semester</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Student Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" required>
+                    </div>
+                </div>
+
+                <!-- Parent/Guardian Information -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="guardianName" class="form-label">Parent/Guardian Name</label>
+                        <input type="text" class="form-control" id="guardianName" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="guardianPhone" class="form-label">Parent/Guardian Phone</label>
+                        <input type="tel" class="form-control" id="guardianPhone" required>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="guardianEmail" class="form-label">Parent/Guardian Email</label>
+                        <input type="email" class="form-control" id="guardianEmail" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="guardianAddress" class="form-label">Parent/Guardian Address</label>
+                        <input type="text" class="form-control" id="guardianAddress" required>
+                    </div>
+                </div>
+
+                <!-- Back Paper Section -->
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="hasBackPaper">
+                    <label class="form-check-label" for="hasBackPaper">Do you have a back paper?</label>
+                </div>
+
+                <div id="backPaperDetails" style="display: none;">
+                    <div id="backPaperModules">
+                        <div class="row mb-3 back-paper-module">
+                            <div class="col-md-6">
+                                <label for="module" class="form-label">Back Paper Module</label>
+                                <input type="text" class="form-control" name="module[]">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="moduleCode" class="form-label">Module Code</label>
+                                <input type="text" class="form-control" name="moduleCode[]">
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-secondary mt-2" id="addModuleBtn">Add Another Module</button>
+                </div>
+
+                <!-- Add space between buttons -->
+                <div class="spacing-btn">
+                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                </div>
+            </form>
+            <button type="button" class="btn btn-back mt-3" onclick="goBackHome()">Back to Home</button>
+        </div>
+    </div>
+
+    <footer class="footer text-white py-4 mt-auto" style="background-color: rgba(54, 72, 171, 1);">
+        <div class="container">
+            <div class="row">
+                <!-- Register -->
+    <div class="col-md-3">
+    <h5 class="fw-bold">REGISTER</h5>
+    <ul class="list-unstyled">
+        <li><a href="#" class="text-white text-decoration-none">Spring Semester</a></li>
+        <li><a href="#" class="text-white text-decoration-none">Autumn Semester</a></li>
+    </ul>
+    </div>
+    
+                <!-- Support -->
+                <div class="col-md-3">
+                    <h5 class="fw-bold">SUPPORT</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Customer Service</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Accessibility</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Report Abuse</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Report Ethical Hacking</a></li>
+                    </ul>
+                </div>
+    
+               <!-- Connect With Us -->
+    <div class="col-md-3">
+    <h5 class="fw-bold">CONNECT WITH US</h5>
+    <p>Follow us to get updates.</p>
+    <div>
+        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    </div>
+    
+    <!-- Address -->
+    <div class="col-md-3">
+    <h5 class="fw-bold">ADDRESS</h5>
+    <ul class="list-unstyled">
+        <li>College of Science and Technology,</li>
+        <li>Rinchending, Phuentsholing,</li>
+        <li>Chukkha: Bhutan,</li>
+        <li>Post-Box No: 450</li>
+        <li>Postal Code: 21101</li>
+        <li>Email: <a href="mailto:info.cst@rub.edu.bt" class="text-white text-decoration-none">info.cst@rub.edu.bt</a></li>
+        <li>Web Manager: <a href="mailto:ictunit.cst@rub.edu.bt" class="text-white text-decoration-none">sonamdechen773@gmail.com</a></li>
+        <li><a href="#" class="text-white text-decoration-none">Search...</a></li>
+    </ul>
+    </div>
+    
+            </div>
+    
+            <hr class="bg-light">
+    
+            <div class="row">
+                <div class="col-md-8">
+                    <p>&copy; 2025 Semester Registration System. All Rights Reserved.</p>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Show back paper details if the checkbox is checked
+        document.getElementById('hasBackPaper').addEventListener('change', function () {
+            document.getElementById('backPaperDetails').style.display = this.checked ? 'block' : 'none';
+        });
+
+        // Add another back paper module input
+        document.getElementById('addModuleBtn').addEventListener('click', function() {
+            var newModule = document.createElement('div');
+            newModule.classList.add('row', 'mb-3', 'back-paper-module');
+            newModule.innerHTML = `
+                <div class="col-md-6">
+                    <label for="module" class="form-label">Back Paper Module</label>
+                    <input type="text" class="form-control" name="module[]">
+                </div>
+                <div class="col-md-6">
+                    <label for="moduleCode" class="form-label">Module Code</label>
+                    <input type="text" class="form-control" name="moduleCode[]">
+                </div>
+            `;
+            document.getElementById('backPaperModules').appendChild(newModule);
+        });
+
+        // Go back to home page
+        function goBackHome() {
+            window.location.href = 'main.html'; // Redirects to the home page
+        }
+
+        // Form submission logic (for demonstration)
+        document.getElementById('scholarshipForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Application submitted successfully!');
+            // Additional form handling logic like sending data to a server can be added here
+        });
+    </script>
+</body>
+</html>
